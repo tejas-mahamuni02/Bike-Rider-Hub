@@ -1,0 +1,347 @@
+.accordion {
+  width: 500px;
+  margin: 50px auto;
+  padding: 25px;
+}
+
+.accordion-section {
+  background-color: #fff;
+  margin-bottom: 5px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* border-top: 1px solid gray; */
+  /* border-bottom: 1px solid gray; */
+}
+
+.accordion-section label {
+  display: block;
+  padding: 20px;
+  cursor: pointer;
+  background-color: white;
+  border-bottom: 1px solid white;
+}
+
+.accordion-section label::after {
+  content: '+';
+  float: right;
+  background-color: black;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.accordion-section #input-sm {
+  display: none;
+}
+
+.accordion-section-content {
+  padding: 10px;
+  display: none;
+
+}
+
+.accordion-section #input-sm:checked+label {
+  background-color: #ddd;
+}
+
+.accordion-section #input-sm:checked+label::after {
+  content: '-';
+  float: right;
+  background-color: black;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.accordion-section #input-sm:checked+label+.accordion-section-content {
+  display: block;
+}
+
+
+
+
+/* second container start*/
+
+body {
+  background: white;
+  font-family: 'roboto', sans-serif;
+}
+
+.mytabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  border-left: 1px solid gray;
+}
+
+#labl2 {
+  width: 150px;
+}
+
+.mytabs input[type="radio"] {
+  display: none;
+}
+
+.mytabs label {
+  padding: 25px;
+  background-color: #e2e2e2;
+  font-weight: bold;
+}
+
+.tab {
+  flex-wrap: wrap;
+}
+
+.mytabs .tab {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  order: 1;
+  display: none;
+  flex-wrap: wrap;
+}
+
+
+.tab>img {
+  height: 200px;
+  width: 400px;
+  padding-left: 70px;
+}
+
+.mytabs input[type='radio']:checked+label+.tab {
+  display: block;
+}
+
+.mytabs input[type='radio']:checked+label {
+  background-color: white;
+  border-top: brown solid 2px;
+}
+
+
+.about-info {
+  display: flex;
+}
+
+
+/* #banner2 */
+#container {
+  margin: auto;
+  width: 100%;
+  background-color: #E81938;
+}
+
+#container,
+#one,
+#two,
+#three {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.title {
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.title :hover {
+  background-color: red;
+  color: whitesmoke;
+}
+
+.whoweare :hover {
+  border: 4px solid white;
+}
+
+.clubhistory :hover {
+  border: 4px solid white;
+}
+
+.whyjoinus :hover {
+  border: 4px solid white;
+}
+
+#one,
+#two,
+#three {
+  border-bottom: red;
+  padding: 50px;
+}
+
+
+
+
+
+/* banner3 */
+
+#banner3-name {
+  font-size: 35px;
+  text-align: center;
+  color: whitesmoke;
+
+}
+
+#container3 {
+  border: 2px solid black;
+  background-color: #1c1c1c;
+}
+
+.card {
+  color: whitesmoke;
+  display: inline-block;
+  border: 2px solid whitesmoke;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 27px;
+}
+
+.card-img {
+  margin-left: 42px;
+  height: 200px;
+  width: 200px;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 25px;
+}
+
+.btn-primary {
+  margin-left: 85px;
+  font-style: bold;
+  font-size: 20;
+  padding: 10px;
+  background-color: peru;
+  color: black;
+  border: 2PX solid whitesmoke;
+}
+
+/* #banner2 */
+#container {
+  margin: auto;
+  width: 100%;
+  /* background-color: aqua; */
+  background-color: #bd5666;
+}
+
+#container,
+#one,
+#two,
+#three {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.title {
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.title :hover {
+  background-color: peru;
+  /* background-color: red; */
+  color: whitesmoke;
+}
+
+.whoweare :hover {
+  border: 4px solid white;
+}
+
+.clubhistory :hover {
+  border: 4px solid white;
+}
+
+.whyjoinus :hover {
+  border: 4px solid white;
+}
+
+#one,
+#two,
+#three {
+  border-bottom: red;
+}
+
+#one,
+#two,
+#three {
+  padding: 50px;
+}
+
+#one {
+  margin-left: 45px;
+}
+
+/* banner3 */
+
+#banner3-name {
+  font-size: 35px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+#container3 {
+  border: 2px solid black;
+}
+
+.card {
+  color: whitesmoke;
+  display: inline-block;
+  border: 2px solid whitesmoke;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 27px;
+}
+
+.card-img {
+  margin-left: 42px;
+  height: 200px;
+  width: 200px;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 25px;
+}
+
+.btn-primary {
+  margin-left: 85px;
+  font-style: bold;
+  font-size: 20;
+  padding: 10px;
+  background-color: peru;
+  color: black;
+  border: 2PX solid whitesmoke;
+}
+
+#loginsection1 {
+  width: 70%;
+  height: 60%;
+  /* background-color:aqua ; */
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 10%;
+}
+
+#tagline1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}

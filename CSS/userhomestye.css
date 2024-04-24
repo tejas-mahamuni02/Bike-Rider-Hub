@@ -1,0 +1,378 @@
+:root {
+  --color: #8f8f8f;
+  --back: #1c1c1c;
+  --back2: #131313;
+  --btnclr: #E81938;
+  --text: #FFFFFF;
+  --font1: 16px;
+  --font2: 18px;
+  --font3: 30px;
+  --font4: 50px;
+  --fontfamily1: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fontfamily2: noto sans, helvetica neue, helvetica, arial, sans-serif;
+  /* svg circle
+  <svg height="100" width="100">
+<circle cx="8" cy="8" r="5" fill="red" />
+</svg> */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--back);
+  /* font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
+  font-family: var(--fontfamily1);
+
+}
+
+/* Banner 1 CSS Starts Here */
+#banner1 {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Images/vlad-dyshlivenko-jPpYTKiS488-unsplash.jpg)center/cover no-repeat; */
+  width: 100%;
+  height: 100vh;
+  animation: imgchange 12s linear infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes imgchange {
+  0% {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/vlad-dyshlivenko-jPpYTKiS488-unsplash.jpg)center/cover no-repeat;
+  }
+
+  50% {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/Bikewallpaper7.jpg)center/cover no-repeat;
+  }
+
+  100% {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/Bikewallpaper8.jpg)center/cover no-repeat;
+  }
+}
+
+#topsection {
+  background-color: var(--back);
+  color: var(--color);
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tsectiondiv {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.tsectiondivitem {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-right: 1px solid var(--btnclr);
+  border-left: 0.5px solid var(--btnclr);
+}
+
+#navsection {
+  width: 100%;
+  height: 100px;
+  /* background-color:aqua ; */
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--text);
+  align-items: center;
+}
+
+#mainlogo {
+  width: 10%;
+}
+
+#navsectiondiv {
+  width: 75%;
+}
+
+#navul {
+  display: flex;
+  color: var(--text);
+  justify-content: end;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navitem {
+  font: var(--font1);
+  list-style: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* #aboutclubul
+{
+  position: relative;
+  top: 80px;
+  right: 50px;
+  background-color: var(--back);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+.navitem>a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+#navbtn {
+  height: 60%;
+  width: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: var(--btnclr);
+  color: var(--text);
+}
+
+.navitemoption {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--text);
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  /* margin-top: 30px; */
+  margin-left: -40px;
+}
+
+#events:hover #Eventsul,
+#pages:hover #pagesul,
+#aboutclub:hover #aboutclubul {
+  visibility: visible;
+
+}
+
+.navitemoption li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.navitemoption a {
+  width: 100%;
+  text-decoration: none;
+  color: var(--color);
+}
+
+.navitemoption li:hover a {
+  background-color: var(--color);
+  color: var(--btnclr);
+}
+
+.navitemoption li:hover {
+  background-color: var(--color);
+}
+
+#taglinesection {
+  width: 100%;
+  height: 75%;
+  /* background-color:aqua ; */
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#tagline {
+  font-size: var(--font4);
+  text-transform: uppercase;
+}
+
+
+
+#footersection1 {
+  width: 100%;
+  height: 80vh;
+  background-color: var(--back);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text);
+  font-family: var(--fontfamily2);
+}
+
+#footersection1>div {
+  width: 30%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border-right: 5px solid var(--btnclr); */
+  border: 2px solid var(--btnclr);
+}
+
+#footersection1>div>div>span,
+#footersection>div>div {
+  display: flex;
+}
+
+#quicklinksul a {
+  text-decoration: none;
+  color: var(--btnclr);
+}
+
+.quicklinksli {
+  list-style: none;
+}
+
+#footersection1>div:hover {
+  background-color: var(--text);
+  color: #E81938;
+}
+
+#footersection2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--back2);
+  color: var(--text);
+  height: 20vh;
+}
+
+#footersection2>div {
+  display: flex;
+  justify-content: space-around;
+}
+
+#loginsection {
+  width: 50%;
+  height: 60%;
+  /* background-color:aqua ; */
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 10%;
+}
+
+#logininframe {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+}
+
+/* User Home Style is start */
+#Userbanner2 {
+
+  width: 100%;
+  height: 100vh;
+  background-color: var(--back);
+  color: var(--text);
+  border-bottom: 1px solid var(--text);
+}
+
+.userhomesection {
+  width: 100%;
+  height: 80vh;
+  background-color: var(--back);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text);
+  font-family: var(--fontfamily2);
+}
+
+.userhomesection>#userdiv1 {
+  width: 40%;
+  height: 70%;
+  border: 2px solid white;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../Images/newbike.avif)center/cover no-repeat;
+
+}
+
+/* button
+{
+    position: relative;
+    left:30%;
+    margin:2%;
+    padding: 20px;
+    background-color: #E81938;
+} */
+.UserUl>li {
+  /* margin:auto; */
+
+  padding: 10px;
+}
+
+#userbtn1 {
+  position: relative;
+  left: 10%;
+  margin: 2%;
+  padding: 20px;
+  background-color: #E81938;
+}
+
+#userbtn2 {
+
+  position: relative;
+  left: 50%;
+  margin: 2%;
+  padding: 20px;
+  background-color: #E81938;
+}
+
+#userdiv1 {
+  /* background: hwb(351 7% 4%); */
+  /* animation: slider 5s linear ease-in-out ; */
+
+  overflow: hidden;
+}
+
+.UserUl {
+  /* display: none; */
+  height: 100%;
+  /* opacity: 0; */
+}
+
+#userdiv1:hover .UserUl {
+  animation-name: slider;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes slider {
+  0% {
+
+    /*  position: relative;
+       left:40%;
+      bottom: 20%;
+      top:10%;  */
+    opacity: 0;
+    background: rgba(232, 25, 56, 0.5);
+  }
+
+  /* 75%
+  {
+   
+      position: relative;
+      left:30%;
+      opacity: 0.5;
+  
+  } */
+  100% {
+
+    /*  position:relative;
+      left:0%; */
+    opacity: 1;
+    background: rgba(232, 25, 56, 1);
+
+  }
+}

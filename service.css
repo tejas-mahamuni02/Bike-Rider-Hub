@@ -1,0 +1,170 @@
+:root {
+  --color: #8f8f8f;
+  --back: #1c1c1c;
+  --back2: #131313;
+  --btnclr: #E81938;
+  --text: #FFFFFF;
+  --font1: 16px;
+  --font2: 18px;
+  --font3: 30px;
+  --font4: 50px;
+  --fontfamily1: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fontfamily2: noto sans, helvetica neue, helvetica, arial, sans-serif;
+  --fontfamily3: @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+}
+
+/* 1.Universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--back);
+  color: var(--text);
+}
+
+/* 2.Banner */
+#banner {
+  position: relative;
+}
+
+#banner span {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 75px;
+  text-shadow: 5px 5px 10px var(--back);
+}
+
+#banner img {
+  width: 100%;
+  height: 100vh;
+}
+
+/* 3.Services list */
+.services_main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  position: relative;
+  left: 5%;
+  margin-top: 5%;
+  /* background-color: var(--btnclr); */
+}
+
+.services_main>div {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px 10px 0px 10px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.services_main>.we_providing {
+  background-color: var(--btnclr);
+  color: var(--text);
+  justify-content: center;
+  padding: 30px;
+  font-size: var(--font4);
+  font-weight: 700;
+}
+
+.services_main>div>img {
+  width: 100%;
+  height: 500px;
+  transition: 0.2s ease-in-out;
+}
+
+.services_main>div:hover>img,
+.services_main>div>div:hover>img {
+
+  filter: blur(2px);
+  transform: scale(1.15);
+}
+
+.services_main>div>i {
+  opacity: 0;
+  font-size: 100px;
+  position: absolute;
+  transition: .2s ease-in-out;
+}
+
+.services_main>div:hover>.fa-solid {
+  opacity: 1;
+}
+
+.right>i {
+  color: var(--text);
+  right: 10%;
+}
+
+.left>i {
+  color: var(--text);
+  left: 10%;
+}
+
+.services_main>div>h1 {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  right: 25%;
+  text-shadow: 5px 5px 10px var(--back);
+  font-size: var(--font4);
+}
+
+.services_main>div>p {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  right: 20%;
+  text-shadow: 5px 5px 10px var(--back);
+  font-size: var(--font3);
+}
+
+.services_main:nth-child(6) {
+  display: flex;
+}
+
+.services_main>div>div {
+  position: relative;
+  width: 50%;
+  height: 450px;
+  margin: 0px 10px 10px 10px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.services_main>div>div>img {
+  width: 100%;
+  height: 100%;
+  transition: .2s ease-in-out;
+}
+
+.services_main>div>div>i {
+  opacity: 0;
+  font-size: 200px;
+  position: absolute;
+  top: 30%;
+  left: 32%;
+  transition: .3s ease-in-out;
+  color: var(--text);
+}
+
+.services_main>div>div:hover>.fa-solid {
+  opacity: 1;
+}
+
+.services_main>div>div>h2 {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  right: 20%;
+  text-shadow: 5px 5px 10px var(--back);
+  font-size: var(--font4);
+}

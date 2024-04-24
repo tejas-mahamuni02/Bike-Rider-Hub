@@ -1,0 +1,397 @@
+:root {
+    --color: #8f8f8f;
+    --back: #1c1c1c;
+    --back2: #131313;
+    --btnclr: #E81938;
+    --text: #FFFFFF;
+    --font1: 16px;
+    --font2: 18px;
+    --font3: 30px;
+    --font4: 50px;
+    --fontfamily1: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --fontfamily2: noto sans, helvetica neue, helvetica, arial, sans-serif;
+    /* svg circle
+    <svg height="100" width="100">
+  <circle cx="8" cy="8" r="5" fill="red" />
+</svg> */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--back);
+    /* font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
+    font-family: var(--fontfamily1);
+
+}
+
+/* Banner 1 CSS Starts Here */
+#banner1 {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Images/vlad-dyshlivenko-jPpYTKiS488-unsplash.jpg)center/cover no-repeat; */
+    width: 100%;
+    height: 100vh;
+    animation: imgchange 12s linear infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes imgchange {
+    0% {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/vlad-dyshlivenko-jPpYTKiS488-unsplash.jpg)center/cover no-repeat;
+    }
+
+    50% {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/Bikewallpaper7.jpg)center/cover no-repeat;
+    }
+
+    100% {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/Bikewallpaper8.jpg)center/cover no-repeat;
+    }
+}
+
+#topsection {
+    background-color: var(--back);
+    color: var(--color);
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tsectiondiv {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.tsectiondivitem {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: 1px solid var(--btnclr);
+    border-left: 0.5px solid var(--btnclr);
+}
+
+#navsection {
+    width: 100%;
+    height: 100px;
+    /* background-color:aqua ; */
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--text);
+    align-items: center;
+}
+
+#mainlogo {
+    width: 10%;
+}
+
+#navsectiondiv {
+    width: 75%;
+}
+
+#navul {
+    display: flex;
+    color: var(--text);
+    justify-content: end;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navitem {
+    font: var(--font1);
+    list-style: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* #aboutclubul
+{
+    position: relative;
+    top: 80px;
+    right: 50px;
+    background-color: var(--back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+.navitem>a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+#navbtn {
+    height: 60%;
+    width: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--btnclr);
+    color: var(--text);
+}
+
+#navbtn>a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.navitemoption {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--text);
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    /* margin-top: 30px; */
+    margin-left: -40px;
+}
+
+#events:hover #Eventsul,
+#pages:hover #pagesul,
+#aboutclub:hover #aboutclubul {
+    visibility: visible;
+
+}
+
+.navitemoption li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.navitemoption a {
+    width: 100%;
+    text-decoration: none;
+    color: var(--color);
+}
+
+.navitemoption li:hover a {
+    background-color: var(--color);
+    color: var(--btnclr);
+}
+
+.navitemoption li:hover {
+    background-color: var(--color);
+}
+
+#taglinesection {
+    width: 100%;
+    height: 75%;
+    /* background-color:aqua ; */
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tagline {
+    font-size: var(--font4);
+    text-transform: uppercase;
+}
+
+#banner2 {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Images/vlad-dyshlivenko-jPpYTKiS488-unsplash.jpg)center/cover no-repeat; */
+    width: 100%;
+    background-color: var(--back);
+    color: var(--text);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+    border-bottom: 1px solid var(--text);
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.infodivs {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    /* margin-bottom: 25px; */
+    /* border: 5px solid red; */
+    align-items: center;
+}
+
+.infoinnerdiv {
+    width: 50%;
+    height: 100%;
+    /* border: #FFFFFF solid 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infodivs:nth-child(2) {
+    justify-content: flex-end;
+}
+
+#infoinnerdiv2 {
+    border-left: 8px solid var(--btnclr);
+    position: relative;
+    left: 3px;
+}
+
+#infoinnerdiv1,
+#infoinnerdiv3 {
+    border-right: 8px solid var(--btnclr);
+    position: relative;
+    left: -5px;
+}
+
+.infoinnerdiv>div {
+    width: 75%;
+    height: 75%;
+    border: 2px solid var(--text);
+    /* overflow: hidden; */
+    transition: all ease-in-out 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin-bottom: auto;
+}
+
+#infoinnerdiv1>div {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/Bike1.jpg)center/cover no-repeat;
+    overflow: hidden;
+}
+
+#infoinnerdiv2>div {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/Bike2.jpg)center/cover no-repeat;
+}
+
+#infoinnerdiv3>div {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Images/Bike3.jpg)center/cover no-repeat;
+}
+
+#infoinnerdiv1>div:hover,
+#infoinnerdiv2>div:hover,
+#infoinnerdiv3>div:hover {
+    scale: 1.1;
+}
+
+.infoinnerdiv>div>span {
+    width: 200px;
+    height: 50px;
+    background-color: var(--btnclr);
+    color: var(--text);
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+.infoinnerdiv>div>span:hover {
+    background-color: rgba(232, 25, 56, 0.9);
+}
+
+.infoinnerdiv>div>h2 {
+    font: var(--font3);
+    font-weight: 600;
+}
+
+.infoinnerdiv>div>h2:hover {
+    font: var(--font3);
+    color: var(--btnclr);
+    font-weight: 800;
+}
+
+.infoinnerdiv>div>p {
+    font: var(--font1);
+    text-align: center;
+}
+
+#footersection1 {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--back);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text);
+    font-family: var(--fontfamily2);
+}
+
+#footersection1>div {
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-right: 5px solid var(--btnclr); */
+    border: 2px solid var(--btnclr);
+}
+
+#footersection1>div>div>span,
+#footersection>div>div {
+    display: flex;
+}
+
+#quicklinksul a {
+    text-decoration: none;
+    color: var(--btnclr);
+}
+
+.quicklinksli {
+    list-style: none;
+}
+
+#footersection1>div:hover {
+    background-color: var(--text);
+    color: #E81938;
+}
+
+#footersection2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--back2);
+    color: var(--text);
+    height: 20vh;
+}
+
+#footersection2>div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#loginsection {
+    width: 50%;
+    height: 60%;
+    /* background-color:aqua ; */
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 10%;
+}
+
+#logininframe {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+
+/* User Home Style is start */
+
+/* #userhomesection
+{
+
+} */
